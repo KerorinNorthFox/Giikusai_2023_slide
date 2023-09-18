@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content="text/html; charset=utf-8" http-equiv="content-type">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.5.0/reveal.min.css" integrity="sha512-USp+nLNMZ1hR0Ll/LpYDxIq47Ypcm3KfjIleOnyFrB1N5KfHLXjfPQD1wQlhv7kVHRRgPvNVtendDS72LyHviA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.5.0/theme/black.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.5.0/plugin/highlight/monokai.min.css" integrity="sha512-z8wQkuDRFwCBfoj7KOiu1MECaRVoXx6rZQWL21x0BsVVH7JkqCp1Otf39qve6CrCycOOL5o9vgfII5Smds23rg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+    
+    .nimislides-li {
+      position: relative;
+    }
+
+    .nimislides-li::before {
+      position: absolute;
+    }
+  
+:root {
+  --r-background-color: #181922;
+  --r-heading-color: #FFE953;
+  --r-link-color: #FFE953;
+  --r-selection-color: #FFE953;
+  --r-link-color-dark: darken(#FFE953 , 15%)
+}
+
+.reveal ul, .reveal ol {
+  display: block;
+  text-align: left;
+}
+
+li::marker {
+  color: #FFE953;
+  content: "»";
+}
+
+li {
+  padding-left: 12px;
+}
+
+    </style>
+  </head>
+  <body>
+  <div class="reveal">
+    <div class="slides">
+      
+      
+      <section data-nimib-slide-number="1" >
+      <h2>CLIマインスイーパー</h2>
+      <p>徳山高専 中谷政登</p>
+      </section>
+      <section data-nimib-slide-number="2" >
+      <section data-nimib-slide-number="3" data-auto-animate >
+      <h2>どんなゲーム？</h2>
+      </section>
+      <section data-nimib-slide-number="4" data-auto-animate >
+      <h2>どんなゲーム？</h2>
+      <img data-src="https://github.com/KerorinNorthFox/MySlides/blob/main/src/images/climinesweeper.png?raw=true" class="r-stretch">
+      </section>
+      <section data-nimib-slide-number="5" data-auto-animate >
+      <h2>どんなゲーム？</h2>
+      <img data-src="https://github.com/KerorinNorthFox/MySlides/blob/main/src/images/climinesweeper.png?raw=true" class="r-stretch">
+      <p>CLIでサクッと遊べるマインスイーパー</p>
+      </section>
+      </section>
+      <section data-nimib-slide-number="6" >
+      <section data-nimib-slide-number="7" data-auto-animate >
+      <aside class="notes">
+  <p>そしてこのアプリのコンセプトは、すぐ遊べる、すぐ終われる、軽いの三つで、とにかく手軽に遊べて暇をつぶすことができることを第一に開発しました。</p>
+
+</aside>
+      <h2>コンセプトはこれだ！！</h2>
+      </section>
+      <section data-nimib-slide-number="8" data-auto-animate >
+      <aside class="notes">
+  <p>そしてこのアプリのコンセプトは、すぐ遊べる、すぐ終われる、軽いの三つで、とにかく手軽に遊べて暇をつぶすことができることを第一に開発しました。</p>
+
+</aside>
+      <h2>コンセプトはこれだ！！</h2>
+      <blockquote>
+<p>爆速起動！！</p>
+</blockquote>
+      </section>
+      <section data-nimib-slide-number="9" data-auto-animate >
+      <aside class="notes">
+  <p>そしてこのアプリのコンセプトは、すぐ遊べる、すぐ終われる、軽いの三つで、とにかく手軽に遊べて暇をつぶすことができることを第一に開発しました。</p>
+
+</aside>
+      <h2>コンセプトはこれだ！！</h2>
+      <blockquote>
+<p>爆速起動！！</p>
+</blockquote>
+      <blockquote>
+<p>爆速終了！！</p>
+</blockquote>
+      </section>
+      <section data-nimib-slide-number="10" data-auto-animate >
+      <aside class="notes">
+  <p>そしてこのアプリのコンセプトは、すぐ遊べる、すぐ終われる、軽いの三つで、とにかく手軽に遊べて暇をつぶすことができることを第一に開発しました。</p>
+
+</aside>
+      <h2>コンセプトはこれだ！！</h2>
+      <blockquote>
+<p>爆速起動！！</p>
+</blockquote>
+      <blockquote>
+<p>爆速終了！！</p>
+</blockquote>
+      <blockquote>
+<p>軽い！！</p>
+</blockquote>
+      </section>
+      <section data-nimib-slide-number="11" data-auto-animate >
+      <aside class="notes">
+  <p>そしてこのアプリのコンセプトは、すぐ遊べる、すぐ終われる、軽いの三つで、とにかく手軽に遊べて暇をつぶすことができることを第一に開発しました。</p>
+
+</aside>
+      <h2>コンセプトはこれだ！！</h2>
+      <blockquote>
+<p>爆速起動！！</p>
+</blockquote>
+      <blockquote>
+<p>爆速終了！！</p>
+</blockquote>
+      <blockquote>
+<p>軽い！！</p>
+</blockquote>
+      <p>→操作のシンプルさに重点を置いて実装</p>
+      </section>
+      <section data-nimib-slide-number="12" data-auto-animate >
+      <aside class="notes">
+  <p>次に作った理由ですが、自分がマインスイーパーが大好きで、作業途中に気分転換にパッと遊べる簡単なゲームが欲しかったのが主な理由で、さらにマインスイーパーは作るのが難しいということを耳にして挑戦してみたいと思ったのが作るきっかけでした。。</p>
+
+</aside>
+      <h2>なんで作ったの？</h2>
+      </section>
+      <section data-nimib-slide-number="13" data-auto-animate >
+      <aside class="notes">
+  <p>次に作った理由ですが、自分がマインスイーパーが大好きで、作業途中に気分転換にパッと遊べる簡単なゲームが欲しかったのが主な理由で、さらにマインスイーパーは作るのが難しいということを耳にして挑戦してみたいと思ったのが作るきっかけでした。。</p>
+
+</aside>
+      <h2>なんで作ったの？</h2>
+      <ul>
+      <div class="fragment fade-in" data-fragment-index="0" data-fragment-index-nimib="0"> 
+  
+      <li class="fragment fade-in-then-semi-out  nimislides-li" data-fragment-index="0" data-fragment-index-nimib="0">
+      <p>マインスイーパーが大好き！</p>
+      </li>
+      </div>
+  
+      <div class="fragment fade-in" data-fragment-index="1" data-fragment-index-nimib="1"> 
+  
+      <li class="fragment fade-in-then-semi-out  nimislides-li" data-fragment-index="1" data-fragment-index-nimib="1">
+      <p>暇つぶしにパッと遊べるゲームが自分の環境に欲しかった</p>
+      </li>
+      </div>
+  
+      <div class="fragment fade-in" data-fragment-index="2" data-fragment-index-nimib="2"> 
+  
+      <li class="fragment fade-in-then-semi-out  nimislides-li" data-fragment-index="2" data-fragment-index-nimib="2">
+      <p>マインスイーパー開発は難しいらしい？</p>
+      </li>
+      </div>
+  
+      </ul>
+      </section>
+      </section>
+      <section data-nimib-slide-number="14" >
+      <section data-nimib-slide-number="15" data-auto-animate >
+      <h2>使用言語</h2>
+      </section>
+      <section data-nimib-slide-number="16" data-auto-animate >
+      <h2>使用言語</h2>
+      <img data-src="https://s3.ap-northeast-1.amazonaws.com/wraptas-prod/jij/f00f1033-3a07-4726-b91e-07a38fc2ad8a/1a09f5e57ca7eae2cb720dbb3fd35516.png" class="r-stretch">
+      <h1>Nim言語</h1>
+      </section>
+      <section data-nimib-slide-number="17" data-auto-animate >
+      <h2>なんでNim?</h2>
+      </section>
+      <section data-nimib-slide-number="18" data-auto-animate >
+      <h2>なんでNim?</h2>
+      <ul>
+      <div class="fragment fade-in" data-fragment-index="3" data-fragment-index-nimib="3"> 
+  
+      <li class="fragment fade-in-then-semi-out  nimislides-li" data-fragment-index="3" data-fragment-index-nimib="3">
+      <p>一番の推し言語</p>
+      </li>
+      </div>
+  
+      <div class="fragment fade-in" data-fragment-index="4" data-fragment-index-nimib="4"> 
+  
+      <li class="fragment fade-in-then-semi-out  nimislides-li" data-fragment-index="4" data-fragment-index-nimib="4">
+      <p>Nimの特徴がコンセプトに合っている</p>
+      </li>
+      </div>
+  
+      <div class="fragment fade-in" data-fragment-index="5" data-fragment-index-nimib="5"> 
+  
+      <li class="fragment fade-in-then-semi-out  nimislides-li" data-fragment-index="5" data-fragment-index-nimib="5">
+      <p>文法が自由で面白い</p>
+      </li>
+      </div>
+  
+      </ul>
+      </section>
+      <section data-nimib-slide-number="19" data-auto-animate >
+      <h2>Nimの特徴、一言で表すと</h2>
+      </section>
+      <section data-nimib-slide-number="20" data-auto-animate >
+      <h2>Nimの特徴、一言で表すと</h2>
+      <h2>書きやすくなったC言語</h2>
+      </section>
+      <section data-nimib-slide-number="21" data-auto-animate >
+      <h2>Nimの特徴、一言で表すと</h2>
+      <h2>書きやすくなったC言語</h2>
+      <p>Pythonのような文法、C言語並みの速さ</p>
+      </section>
+      </section>
+      <section data-nimib-slide-number="22" >
+      <aside class="notes">
+  <p>次に遊び方です。</p>
+
+</aside>
+      <h2>遊び方</h2>
+      </section>
+      <section data-nimib-slide-number="23" >
+      <section data-nimib-slide-number="24" data-auto-animate >
+      <aside class="notes">
+  <p>このゲームは手軽さを売りにしているので爆速でゲームの起動して終了することができます。</p>
+
+</aside>
+      <h4>コマンドを打つだけですぐに始められる！</h4>
+      <img data-src="https://github.com/KerorinNorthFox/MySlides/blob/main/src/images/start.gif?raw=true" class="r-stretch">
+      </section>
+      <section data-nimib-slide-number="25" data-auto-animate >
+      <aside class="notes">
+  <p>このゲームは手軽さを売りにしているので爆速でゲームの起動して終了することができます。</p>
+
+</aside>
+      <h4>コマンドを打つだけですぐに始められる！</h4>
+      <img data-src="https://github.com/KerorinNorthFox/MySlides/blob/main/src/images/start.gif?raw=true" class="r-stretch">
+      <p>一瞬で起動、一瞬で終了</p>
+      </section>
+      </section>
+      <section data-nimib-slide-number="26" >
+      <section data-nimib-slide-number="27" data-auto-animate >
+      <h4>オプションを付けてストレスフリーな暇つぶしを！</h4>
+      </section>
+      <section data-nimib-slide-number="28" data-auto-animate >
+      <h4>オプションを付けてストレスフリーな暇つぶしを！</h4>
+      <div style="display: grid; grid-auto-flow: column; overflow-wrap: break-word;">
+      <div>
+      <img data-src="https://github.com/KerorinNorthFox/MySlides/blob/main/src/images/20_cmd.png?raw=true" class="r-stretch">
+      <p>難易度を調整</p>
+      </div>
+      <div>
+      <img data-src="https://github.com/KerorinNorthFox/MySlides/blob/main/src/images/20.png?raw=true" class="r-stretch">
+      </div>
+      </div>
+      </section>
+      <section data-nimib-slide-number="29" data-auto-animate >
+      <h4>オプションを付けてストレスフリーな暇つぶしを！</h4>
+      <div style="display: grid; grid-auto-flow: column; overflow-wrap: break-word;">
+      <div>
+      <img data-src="https://github.com/KerorinNorthFox/MySlides/blob/main/src/images/noColor_cmd.png?raw=true" class="r-stretch">
+      <p>色無し</p>
+      </div>
+      <div>
+      <img data-src="https://github.com/KerorinNorthFox/MySlides/blob/main/src/images/noColor.png?raw=true" class="r-stretch">
+      </div>
+      </div>
+      </section>
+      <section data-nimib-slide-number="30" data-auto-animate >
+      <h4>オプションを付けてストレスフリーな暇つぶしを！</h4>
+      <div style="display: grid; grid-auto-flow: column; overflow-wrap: break-word;">
+      <div>
+      <img data-src="https://github.com/KerorinNorthFox/MySlides/blob/main/src/images/continue10_cmd.png?raw=true" class="r-stretch">
+      <p>コンティニュー回数を調整</p>
+      </div>
+      <div>
+      <img data-src="https://github.com/KerorinNorthFox/MySlides/blob/main/src/images/continue10.png?raw=true" class="r-stretch">
+      </div>
+      </div>
+      </section>
+      <section data-nimib-slide-number="31" data-auto-animate >
+      <h4>オプションを付けてストレスフリーな暇つぶしを！</h4>
+      <div style="display: grid; grid-auto-flow: column; overflow-wrap: break-word;">
+      <div>
+      <img data-src="https://github.com/KerorinNorthFox/MySlides/blob/main/src/images/infinite_cmd.png?raw=true" class="r-stretch">
+      <p>無限コンティニュー！</p>
+      </div>
+      <div>
+      <img data-src="https://github.com/KerorinNorthFox/MySlides/blob/main/src/images/infinite.png?raw=true" class="r-stretch">
+      </div>
+      </div>
+      </section>
+      <section data-nimib-slide-number="32" data-auto-animate >
+      <h4>オプションを付けてストレスフリーな暇つぶしを！</h4>
+      <div style="display: grid; grid-auto-flow: column; overflow-wrap: break-word;">
+      <div>
+      <img data-src="https://github.com/KerorinNorthFox/MySlides/blob/main/src/images/10noColorContinue10_cmd.png?raw=true" class="r-stretch">
+      <p>複数のオプションを組み合わせる</p>
+      </div>
+      <div>
+      <img data-src="https://github.com/KerorinNorthFox/MySlides/blob/main/src/images/10noColorConitnue10.png?raw=true" class="r-stretch">
+      </div>
+      </div>
+      </section>
+      </section>
+      <section data-nimib-slide-number="33" >
+      <section data-nimib-slide-number="34" data-auto-animate >
+      <h2>アニメーション！</h2>
+      <img data-src="https://github.com/KerorinNorthFox/MySlides/blob/main/src/images/boom_animation.gif?raw=true" class="r-stretch">
+      </section>
+      <section data-nimib-slide-number="35" data-auto-animate >
+      <h2>アニメーション！</h2>
+      <img data-src="https://github.com/KerorinNorthFox/MySlides/blob/main/src/images/boom_animation.gif?raw=true" class="r-stretch">
+      <p>視覚的に楽しく</p>
+      </section>
+      </section>
+      <section data-nimib-slide-number="36" >
+      <h2>ご清聴ありがとうございました！！</h2>
+      </section>
+      <script defer>/* Generated by the Nim Compiler v1.6.12 */
+var framePtr = null;
+var excHandler = 0;
+var lastJSError = null;
+
+function toJSStr(s_33556807) {
+                    var Temporary5;
+            var Temporary7;
+
+  var result_33556808 = null;
+
+    var res_33556842 = newSeq_33556825((s_33556807).length);
+    var i_33556843 = 0;
+    var j_33556844 = 0;
+    Label1: do {
+        Label2: while (true) {
+        if (!(i_33556843 < (s_33556807).length)) break Label2;
+          var c_33556845 = s_33556807[i_33556843];
+          if ((c_33556845 < 128)) {
+          res_33556842[j_33556844] = String.fromCharCode(c_33556845);
+          i_33556843 += 1;
+          }
+          else {
+            var helper_33556857 = newSeq_33556825(0);
+            Label3: do {
+                Label4: while (true) {
+                if (!true) break Label4;
+                  var code_33556858 = c_33556845.toString(16);
+                  if ((((code_33556858) == null ? 0 : (code_33556858).length) == 1)) {
+                  helper_33556857.push("%0");;
+                  }
+                  else {
+                  helper_33556857.push("%");;
+                  }
+                  
+                  helper_33556857.push(code_33556858);;
+                  i_33556843 += 1;
+                    if (((s_33556807).length <= i_33556843)) Temporary5 = true; else {                      Temporary5 = (s_33556807[i_33556843] < 128);                    }                  if (Temporary5) {
+                  break Label3;
+                  }
+                  
+                  c_33556845 = s_33556807[i_33556843];
+                }
+            } while (false);
+++excHandler;
+            Temporary7 = framePtr;
+            try {
+            res_33556842[j_33556844] = decodeURIComponent(helper_33556857.join(""));
+--excHandler;
+} catch (EXCEPTION) {
+ var prevJSError = lastJSError;
+ lastJSError = EXCEPTION;
+ --excHandler;
+            framePtr = Temporary7;
+            res_33556842[j_33556844] = helper_33556857.join("");
+            lastJSError = prevJSError;
+            } finally {
+            framePtr = Temporary7;
+            }
+          }
+          
+          j_33556844 += 1;
+        }
+    } while (false);
+    if (res_33556842.length < j_33556844) { for (var i = res_33556842.length ; i < j_33556844 ; ++i) res_33556842.push(null); }
+               else { res_33556842.length = j_33556844; };
+    result_33556808 = res_33556842.join("");
+
+  return result_33556808;
+
+}
+
+function rawEcho() {
+          var buf = "";
+      for (var i = 0; i < arguments.length; ++i) {
+        buf += toJSStr(arguments[i]);
+      }
+      console.log(buf);
+    
+
+  
+}
+
+function makeNimstrLit(c_33556801) {
+      var result = [];
+  for (var i = 0; i < c_33556801.length; ++i) {
+    result[i] = c_33556801.charCodeAt(i);
+  }
+  return result;
+  
+
+  
+}
+if (!Math.trunc) {
+  Math.trunc = function(v) {
+    v = +v;
+    if (!isFinite(v)) return v;
+    return (v - v % 1) || (v < 0 ? -0 : v === 0 ? v : 0);
+  };
+}
+
+var objectID_637534370 = [0];
+
+function newSeq_33556825(len_33556827) {
+  var result_33556828 = [];
+
+    result_33556828 = new Array(len_33556827); for (var i = 0 ; i < len_33556827 ; ++i) { result_33556828[i] = null; }
+  return result_33556828;
+
+}
+
+function find_469762091(a_469762094, item_469762095) {
+  var result_469762096 = 0;
+
+  BeforeRet: do {
+    result_469762096 = 0;
+    Label1: do {
+      var i_469762109 = null;
+      var i_469762206 = 0;
+      Label2: do {
+          Label3: while (true) {
+          if (!(i_469762206 < (a_469762094).length)) break Label3;
+            i_469762109 = a_469762094[i_469762206];
+            if ((i_469762109 == item_469762095)) {
+            break BeforeRet;
+            }
+            
+            result_469762096 += 1;
+            i_469762206 += 1;
+          }
+      } while (false);
+    } while (false);
+    result_469762096 = -1;
+  } while (false);
+
+  return result_469762096;
+
+}
+
+function contains_469762086(a_469762088, item_469762089) {
+  var result_469762090 = false;
+
+  BeforeRet: do {
+    result_469762090 = (0 <= find_469762091(a_469762088, item_469762089));
+    break BeforeRet;
+  } while (false);
+
+  return result_469762090;
+
+}
+
+function HEX3Aanonymous_469762073(eventHEX60gensym0_469762074) {
+    
+function HEX3Aanonymous_469762077(event_469762078) {
+      BeforeRet: do {
+        rawEcho(makeNimstrLit("slidechanged!"));
+        var currentSlide_469762079 = event_469762078.currentSlide;
+        console.log(currentSlide_469762079);
+        Label1: do {
+          var node_469762083 = null;
+          var i_469762201 = 0;
+          var L_469762202 = (currentSlide_469762079.attributes).length;
+          Label2: do {
+              Label3: while (true) {
+              if (!(i_469762201 < L_469762202)) break Label3;
+                node_469762083 = currentSlide_469762079.attributes[i_469762201];
+                if (contains_469762086(["data-background-video", "data-background-iframe", "data-background-image"], node_469762083.nodeName)) {
+                footer_469762076.style.setProperty("visibility", "hidden", []);
+                break BeforeRet;
+                }
+                
+                i_469762201 += 1;
+              }
+          } while (false);
+        } while (false);
+        footer_469762076.style.setProperty("visibility", "visible", []);
+      } while (false);
+
+      
+    }
+      
+function HEX3Aanonymous_469762132(eventHEX60gensym0_469762133) {
+          
+function HEX3Aanonymous_469762136(event_469762137) {
+            BeforeRet: do {
+              rawEcho(makeNimstrLit("slidechanged!"));
+              var currentSlide_469762138 = event_469762137.currentSlide;
+              console.log(currentSlide_469762138);
+              Label1: do {
+                var node_469762142 = null;
+                var i_469762209 = 0;
+                var L_469762210 = (currentSlide_469762138.attributes).length;
+                Label2: do {
+                    Label3: while (true) {
+                    if (!(i_469762209 < L_469762210)) break Label3;
+                      node_469762142 = currentSlide_469762138.attributes[i_469762209];
+                      if (contains_469762086(["data-background-video", "data-background-iframe", "data-background-image"], node_469762142.nodeName)) {
+                      footer_469762135.style.setProperty("visibility", "hidden", []);
+                      break BeforeRet;
+                      }
+                      
+                      i_469762209 += 1;
+                    }
+                } while (false);
+              } while (false);
+              footer_469762135.style.setProperty("visibility", "visible", []);
+            } while (false);
+
+            
+          }
+
+          rawEcho(makeNimstrLit("Doing something!"));
+          var deck_469762134 = Reveal.getRevealElement();
+          var footer_469762135 = document.getElementById("reveal-footer").cloneNode(true);
+          footer_469762135.style.setProperty("visibility", "visible", []);
+          deck_469762134.appendChild(footer_469762135);
+          Reveal.on("slidechanged", HEX3Aanonymous_469762136);
+
+        
+      }
+
+    if (Reveal.isReady()) {
+    rawEcho(makeNimstrLit("Doing something!"));
+    var deck_469762075 = Reveal.getRevealElement();
+    var footer_469762076 = document.getElementById("reveal-footer").cloneNode(true);
+    footer_469762076.style.setProperty("visibility", "visible", []);
+    deck_469762075.appendChild(footer_469762076);
+    Reveal.on("slidechanged", HEX3Aanonymous_469762077);
+    }
+    else {
+    Reveal.on("ready", HEX3Aanonymous_469762132);
+    }
+    
+
+  
+}
+rawEcho(makeNimstrLit("Before"));
+window.addEventListener("load", HEX3Aanonymous_469762073, false);
+</script>
+    </div>
+    <div id="reveal-footer" style="position: absolute; text-align: center; width: 100%; bottom: 0%; visibility: hidden; opacity: 0.6; font-size: 20px">
+      <p>Let's install and play!! : https://github.com/KerorinNorthFox/MineSweeper_on_CLI</p>
+    </div>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.5.0/reveal.js" integrity="sha512-9dFFU5pcR8K4bvw4ng6mLMW5IjslYbA57amHEMtHn3TT9RkKivsDabKffqjUUJ4pCaojAyH05T1OESld199Gcw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.5.0/plugin/highlight/highlight.min.js" integrity="sha512-RCedMo/DOyawQOh4zYtqEHTZAfgrrVQctN3LVCX5kELGsN52TOdwZ8inRY0l9Mo4vtyDFn6oOAgRUilWXgb+wA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.5.0/plugin/notes/notes.min.js" integrity="sha512-MZ7Ehjbh2soaeCZJGaw6vBNAa7+eunl0SUmRPNESchLlboH73lHLEeUa6pZJ2Pcui4NcpDFatr6M+VlcmaH1QA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script>
+    Reveal.initialize({
+      plugins: [ 
+        RevealHighlight,
+        RevealNotes,
+      ],
+    });
+  </script>
+  </body>
+</html>
