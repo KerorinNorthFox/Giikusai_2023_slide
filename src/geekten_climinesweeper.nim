@@ -37,10 +37,12 @@ YellowTheme()
 
 footer: "Let's install and play!! : https://github.com/KerorinNorthFox/MineSweeper_on_CLI"
 
+# 冒頭
 slide:
   nbText: "## CLIマインスイーパー"
   nbText: "徳山高専 中谷政登"
 
+# ゲーム説明
 slide:
   slide(slideOptions(autoAnimate=true)):
     nbText: "## どんなゲーム？"
@@ -54,6 +56,7 @@ slide:
 
 let conceptText = "そしてこのアプリのコンセプトは、すぐ遊べる、すぐ終われる、軽いの三つで、とにかく手軽に遊べて暇をつぶすことができることを第一に開発しました。"
 let whyMadeText = "次に作った理由ですが、自分がマインスイーパーが大好きで、作業途中に気分転換にパッと遊べる簡単なゲームが欲しかったのが主な理由で、さらにマインスイーパーは作るのが難しいということを耳にして挑戦してみたいと思ったのが作るきっかけでした。。"
+# コンセプト＆動機説明
 slide:
   slide(slideOptions(autoAnimate=true)):
     speakerNote(conceptText)
@@ -95,6 +98,7 @@ slide:
       listItem:
         nbText: "マインスイーパー開発は難しいらしい？"
 
+# 技術的な説明
 slide:
   slide(slideOptions(autoAnimate=true)):
     nbText: "## 使用言語"
@@ -125,10 +129,12 @@ slide:
     nbText: "## 書きやすくなったC言語"
     nbText: "Pythonのような文法、C言語並みの速さ"
 
+# 遊び方冒頭
 slide:
   speakerNote("次に遊び方です。")
   nbText: "## 遊び方"
 
+# 起動と終了
 let begin = "このゲームは手軽さを売りにしているので爆速でゲームの起動して終了することができます。"
 slide:
   slide(slideOptions(autoAnimate=true)):
@@ -141,6 +147,17 @@ slide:
     fitImage("https://github.com/KerorinNorthFox/MySlides/blob/main/src/images/start.gif?raw=true")
     nbText: "一瞬で起動、一瞬で終了"
 
+# 簡易セーブ機能の説明
+slide:
+  slide(slideOptions(autoAnimate=true)):
+    nbText: "#### 簡易セーブ機能を実装！"
+    fitImage("https://github.com/KerorinNorthFox/MySlides/blob/main/src/images/save.gif?raw=true")
+  slide(slideOptions(autoAnimate=true)):
+    nbText: "#### 簡易セーブ機能を実装！"
+    fitImage("https://github.com/KerorinNorthFox/MySlides/blob/main/src/images/save.gif?raw=true")
+    nbText: ""
+
+# オプションの説明
 slide:
   slide(slideOptions(autoAnimate=true)):
     nbText: "#### オプションを付けてストレスフリーな暇つぶしを！"
@@ -185,6 +202,7 @@ slide:
       column:
         fitImage("https://github.com/KerorinNorthFox/MySlides/blob/main/src/images/10noColorConitnue10.png?raw=true")
 
+# アニメーションの説明
 slide:
   slide(slideOptions(autoAnimate=true)):
     nbText: "## アニメーション！"
