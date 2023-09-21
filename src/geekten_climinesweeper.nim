@@ -38,24 +38,30 @@ YellowTheme()
 footer: "Let's install and play!! : https://github.com/KerorinNorthFox/MineSweeper_on_CLI"
 
 # 冒頭
+const start: string = "それでは今からCLIマインスイーパーの発表を始めます。"
 slide:
+  speakerNote(start)
   nbText: "## CLIマインスイーパー"
   nbText: "徳山高専 中谷政登"
 
 # ゲーム説明
+const explain: string = "まず「どんなゲーム？」というところなんですけども、アプリ名の通りCLIで手軽に遊べるマインスイーパーです。プレイ中の画像はこのような感じです。"
 slide:
   slide(slideOptions(autoAnimate=true)):
+    speakerNote(explain)
     nbText: "## どんなゲーム？"
   slide(slideOptions(autoAnimate=true)):
+    speakerNote(explain)
     nbText: "## どんなゲーム？"
     fitImage("https://github.com/KerorinNorthFox/MySlides/blob/main/src/images/climinesweeper.png?raw=true")
   slide(slideOptions(autoAnimate=true)):
+    speakerNote(explain)
     nbText: "## どんなゲーム？"
     fitImage("https://github.com/KerorinNorthFox/MySlides/blob/main/src/images/climinesweeper.png?raw=true")
     nbText: "CLIでサクッと遊べるマインスイーパー"
 
-let conceptText = "そしてこのアプリのコンセプトは、すぐ遊べる、すぐ終われる、軽いの三つで、とにかく手軽に遊べて暇をつぶすことができることを第一に開発しました。"
-let whyMadeText = "次に作った理由ですが、自分がマインスイーパーが大好きで、作業途中に気分転換にパッと遊べる簡単なゲームが欲しかったのが主な理由で、さらにマインスイーパーは作るのが難しいということを耳にして挑戦してみたいと思ったのが作るきっかけでした。。"
+let conceptText = "そしてこのアプリのコンセプトは、すぐに起動できる、一瞬で終了、軽いの三つで、とにかく手軽に遊べて暇をつぶすことができるために簡単さとシンプルさを第一に開発しました。"
+let whyMadeText = "次に作った理由ですが、まず主な理由としては作業途中に気分転換としてパッと遊べる簡単なゲームが欲しかったというのがあります。また、私がマインスイーパーが大好きで、小学生の頃によくwindows7にインストールされていたマインスイーパーを遊んでいました。さらにマインスイーパーは作るのが難しいということを以前耳にしたことがあったため挑戦してみたいと思ったのが作るきっかけでした。"
 # コンセプト＆動機説明
 slide:
   slide(slideOptions(autoAnimate=true)):
@@ -64,25 +70,25 @@ slide:
   slide(slideOptions(autoAnimate=true)):
     speakerNote(conceptText)
     nbText: "## コンセプトはこれだ！！"
-    nbText: ">爆速起動！！"
+    nbText: ">すぐに起動！！"
   slide(slideOptions(autoAnimate=true)):
     speakerNote(conceptText)
     nbText: "## コンセプトはこれだ！！"
-    nbText: ">爆速起動！！"
-    nbText: ">爆速終了！！"
+    nbText: ">すぐに起動！！"
+    nbText: ">一瞬で終了！！"
   slide(slideOptions(autoAnimate=true)):
     speakerNote(conceptText)
     nbText: "## コンセプトはこれだ！！"
-    nbText: ">爆速起動！！"
-    nbText: ">爆速終了！！"
+    nbText: ">すぐに起動！！"
+    nbText: ">一瞬で終了！！"
     nbText: ">軽い！！"
   slide(slideOptions(autoAnimate=true)):
     speakerNote(conceptText)
     nbText: "## コンセプトはこれだ！！"
-    nbText: ">爆速起動！！"
-    nbText: ">爆速終了！！"
+    nbText: ">すぐに起動！！"
+    nbText: ">一瞬で終了！！"
     nbText: ">軽い！！"
-    nbText: "→操作のシンプルさに重点を置いて実装"
+    nbText: "→急いでる人でも楽しめるシンプルさに重点を置いて実装"
 
   slide(slideOptions(autoAnimate=true)):
     speakerNote(whyMadeText)
@@ -92,13 +98,14 @@ slide:
     nbText: "## なんで作ったの？"
     unorderedList:
       listItem:
-        nbText: "マインスイーパーが大好き！"
-      listItem:
         nbText: "暇つぶしにパッと遊べるゲームが自分の環境に欲しかった"
+      listItem:
+        nbText: "マインスイーパーが大好き！"
       listItem:
         nbText: "マインスイーパー開発は難しいらしい？"
 
 # 技術的な説明
+const tech: string = ""
 slide:
   slide(slideOptions(autoAnimate=true)):
     nbText: "## 使用言語"
@@ -155,7 +162,7 @@ slide:
   slide(slideOptions(autoAnimate=true)):
     nbText: "#### 簡易セーブ機能を実装！"
     fitImage("https://github.com/KerorinNorthFox/MySlides/blob/main/src/images/save.gif?raw=true")
-    nbText: ""
+    nbText: "突然用事ができても進捗をすぐに残せる！"
 
 # オプションの説明
 slide:
