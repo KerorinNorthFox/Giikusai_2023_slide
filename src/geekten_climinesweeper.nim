@@ -42,10 +42,10 @@ const start: string = "それでは今からCLIマインスイーパーの発表
 slide:
   speakerNote(start)
   nbText: "## CLIマインスイーパー"
-  nbText: "徳山高専 中谷政登"
+  nbText: "徳山高専 機械電気工学科四年 中谷政登"
 
 # ゲーム説明
-const explain: string = "まず「どんなゲーム？」というところなんですけども、アプリ名の通りCLIで手軽に遊べるマインスイーパーです。プレイ中の画像はこのような感じです。"
+const explain: string = "まず「どんなゲーム？」というところなんですが、アプリ名の通りCLIで手軽に遊べるマインスイーパーです。プレイ中の画像はこのような感じです。"
 slide:
   slide(slideOptions(autoAnimate=true)):
     speakerNote(explain)
@@ -60,8 +60,8 @@ slide:
     fitImage("https://github.com/KerorinNorthFox/MySlides/blob/main/src/images/climinesweeper.png?raw=true")
     nbText: "CLIでサクッと遊べるマインスイーパー"
 
-let conceptText = "そしてこのアプリのコンセプトは、すぐに起動できる、一瞬で終了、軽いの三つで、とにかく手軽に遊べて暇をつぶすことができるために簡単さとシンプルさを第一に開発しました。"
-let whyMadeText = "次に作った理由ですが、まず主な理由としては作業途中に気分転換としてパッと遊べる簡単なゲームが欲しかったというのがあります。また、私がマインスイーパーが大好きで、小学生の頃によくwindows7にインストールされていたマインスイーパーを遊んでいました。さらにマインスイーパーは作るのが難しいということを以前耳にしたことがあったため挑戦してみたいと思ったのが作るきっかけでした。"
+let conceptText = "そしてこのアプリのコンセプトなんですがそれは、すぐに起動できる、一瞬で終了、軽いの三つで、とにかく暇つぶしや気分転換のために手軽に遊べる簡単さとシンプルさを第一に開発しました。"
+let whyMadeText = "次に作った理由ですが、まず主な理由としては私自身が作業途中に気分転換としてパッと遊べる簡単なゲームが欲しかったというのがあります。また、私がマインスイーパーが大好きで、小学生の頃によくwindows7にインストールされていたマインスイーパーを遊んでいました。さらにマインスイーパーは作るのが難しいということを以前耳にしたことがあったため挑戦してみたいと思ったのが作るきっかけでした。"
 # コンセプト＆動機説明
 slide:
   slide(slideOptions(autoAnimate=true)):
@@ -105,18 +105,24 @@ slide:
         nbText: "マインスイーパー開発は難しいらしい？"
 
 # 技術的な説明
-const tech: string = ""
+const tech: string = "次に技術レベルに対するアピールですが、使用言語が特徴的です。言語にはNimという比較的マイナーな言語を使用しています"
+const whyNim: string = "他にもいろいろ言語がある中なんでNimを使用したかというと、まず、私の一番の推し言語というのが最大の理由というか全体の8割がこの理由です。ちなみにこのスライドもNimを使って作られています。また、後で紹介しますがNimの特徴というものがコンセプトに合っているという点があります。さらに一つ目の理由にも関連しますが文法が面白いということも気分的に重要だったりします。"
+const nimFeature: string = "そして先ほど出てきたNimの特徴ですが、一言で表すと「描きやすくなったC言語」です。文法の見た目はPythonやRubyのようで可読性が高く、実行速度はCと張り合える程の速さが出ます。"
 slide:
   slide(slideOptions(autoAnimate=true)):
+    speakerNote(tech)
     nbText: "## 使用言語"
   slide(slideOptions(autoAnimate=true)):
+    speakerNote(tech)
     nbText: "## 使用言語"
     fitImage("https://s3.ap-northeast-1.amazonaws.com/wraptas-prod/jij/f00f1033-3a07-4726-b91e-07a38fc2ad8a/1a09f5e57ca7eae2cb720dbb3fd35516.png")
     nbText: "# Nim言語"
 
   slide(slideOptions(autoAnimate=true)):
+    speakerNote(whyNim)
     nbText: "## なんでNim?"
   slide(slideOptions(autoAnimate=true)):
+    speakerNote(whyNim)
     nbText: "## なんでNim?"
     unorderedList:
       listItem:
@@ -127,11 +133,14 @@ slide:
         nbText: "文法が自由で面白い"
 
   slide(slideOptions(autoAnimate=true)):
+    speakerNote(nimFeature)
     nbText: "## Nimの特徴、一言で表すと"
   slide(slideOptions(autoAnimate=true)):
+    speakerNote(nimFeature)
     nbText: "## Nimの特徴、一言で表すと"
     nbText: "## 書きやすくなったC言語"
   slide(slideOptions(autoAnimate=true)):
+    speakerNote(nimFeature)
     nbText: "## Nimの特徴、一言で表すと"
     nbText: "## 書きやすくなったC言語"
     nbText: "Pythonのような文法、C言語並みの速さ"
@@ -142,7 +151,7 @@ slide:
   nbText: "## 遊び方"
 
 # 起動と終了
-let begin = "このゲームは手軽さを売りにしているので爆速でゲームの起動して終了することができます。"
+let begin = "このゲームの売りは作業合間にできる手軽さなので起動や終了に無駄な処理を挟まずにすぐに開始することができます。"
 slide:
   slide(slideOptions(autoAnimate=true)):
     speakerNote(begin)
@@ -167,9 +176,9 @@ slide:
 # オプションの説明
 slide:
   slide(slideOptions(autoAnimate=true)):
-    nbText: "#### オプションを付けてストレスフリーな暇つぶしを！"
+    nbText: "#### オプションを付けてじっくり楽しむ！"
   slide(slideOptions(autoAnimate=true)):
-    nbText: "#### オプションを付けてストレスフリーな暇つぶしを！"
+    nbText: "#### オプションを付けてじっくり楽しむ！"
     adaptiveColumns:
       column:
         fitImage("https://github.com/KerorinNorthFox/MySlides/blob/main/src/images/20_cmd.png?raw=true")
@@ -177,7 +186,7 @@ slide:
       column:
         fitImage("https://github.com/KerorinNorthFox/MySlides/blob/main/src/images/20.png?raw=true")
   slide(slideOptions(autoAnimate=true)):
-    nbText: "#### オプションを付けてストレスフリーな暇つぶしを！"
+    nbText: "#### オプションを付けてじっくり楽しむ！"
     adaptiveColumns:
       column:
         fitImage("https://github.com/KerorinNorthFox/MySlides/blob/main/src/images/noColor_cmd.png?raw=true")
@@ -185,7 +194,7 @@ slide:
       column:
         fitImage("https://github.com/KerorinNorthFox/MySlides/blob/main/src/images/noColor.png?raw=true")
   slide(slideOptions(autoAnimate=true)):
-    nbText: "#### オプションを付けてストレスフリーな暇つぶしを！"
+    nbText: "#### オプションを付けてじっくり楽しむ！"
     adaptiveColumns:
       column:
         fitImage("https://github.com/KerorinNorthFox/MySlides/blob/main/src/images/continue10_cmd.png?raw=true")
@@ -193,7 +202,7 @@ slide:
       column:
         fitImage("https://github.com/KerorinNorthFox/MySlides/blob/main/src/images/continue10.png?raw=true")
   slide(slideOptions(autoAnimate=true)):
-    nbText: "#### オプションを付けてストレスフリーな暇つぶしを！"
+    nbText: "#### オプションを付けてじっくり楽しむ！"
     adaptiveColumns:
       column:
         fitImage("https://github.com/KerorinNorthFox/MySlides/blob/main/src/images/infinite_cmd.png?raw=true")
@@ -201,7 +210,7 @@ slide:
       column:
         fitImage("https://github.com/KerorinNorthFox/MySlides/blob/main/src/images/infinite.png?raw=true")
   slide(slideOptions(autoAnimate=true)):
-    nbText: "#### オプションを付けてストレスフリーな暇つぶしを！"
+    nbText: "#### オプションを付けてじっくり楽しむ！"
     adaptiveColumns:
       column:
         fitImage("https://github.com/KerorinNorthFox/MySlides/blob/main/src/images/10noColorContinue10_cmd.png?raw=true")
@@ -221,9 +230,5 @@ slide:
 
 slide:
   nbText: "## ご清聴ありがとうございました！！"
-
-# slide:
-#   fitImage("https://github.com/KerorinNorthFox/MySlides/blob/main/src/images/boom_animation.gif?raw=true")
-
 
 nbSave()
