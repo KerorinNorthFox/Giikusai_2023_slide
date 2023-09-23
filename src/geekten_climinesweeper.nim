@@ -75,18 +75,18 @@ slide:
     speakerNote(conceptText)
     nbText: "## コンセプトはこれだ！！"
     nbText: ">すぐに起動！！"
-    nbText: ">一瞬で終了！！"
+    nbText: ">一瞬で元の作業に戻れる！！"
   slide(slideOptions(autoAnimate=true)):
     speakerNote(conceptText)
     nbText: "## コンセプトはこれだ！！"
     nbText: ">すぐに起動！！"
-    nbText: ">一瞬で終了！！"
+    nbText: ">一瞬で元の作業に戻れる！！"
     nbText: ">軽い！！"
   slide(slideOptions(autoAnimate=true)):
     speakerNote(conceptText)
     nbText: "## コンセプトはこれだ！！"
     nbText: ">すぐに起動！！"
-    nbText: ">一瞬で終了！！"
+    nbText: ">一瞬で元の作業に戻れる！！"
     nbText: ">軽い！！"
     nbText: "→急いでる人でも楽しめるシンプルさに重点を置いて実装"
 
